@@ -1,0 +1,7 @@
+{
+  "name": "twitch-ha-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": { "start": "node bot.js" },
+  "dependencies": { "tmi.js": "^1.8.5" }
+}
