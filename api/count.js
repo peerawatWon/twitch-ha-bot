@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ command: 'INCR', args: ['ha-count'] }),
+      body: JSON.stringify(['INCR', 'ha-count']),
     })
 
     const data = await response.json()

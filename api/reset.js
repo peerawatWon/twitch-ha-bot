@@ -13,7 +13,7 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ command: 'SET', args: ['ha-count', '0'] }),
+      body: JSON.stringify(['SET', 'ha-count', '0']),
     })
 
     const data = await response.json()
